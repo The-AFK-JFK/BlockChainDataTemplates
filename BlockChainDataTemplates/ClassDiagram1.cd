@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="MainWindow - &#xD;&#xA;&#xD;&#xA;The MainWindow is a class wihtin a WPF application that that contains the Help / Button Click &amp; MainWindow Methods.">
+    <Position X="4" Y="0.812" Height="0.99" Width="2.846" />
+  </Comment>
+  <Comment CommentText="BlockChain - &#xD;&#xA;&#xD;&#xA;The BlockChain is a class that both, contains and handles the Void, as well as initialising the BlockChain">
+    <Position X="5.01" Y="2.74" Height="0.948" Width="2.846" />
+  </Comment>
+  <Comment CommentText="ObservableCollection - &#xD;&#xA;&#xD;&#xA;The ObservableCollection is a GenericClass that contains a variety of mehtods and events. The events trigger and get handled by an EventHandler. Without this this the program will not run efficiently.">
+    <Position X="7" Y="5.365" Height="1.418" Width="2.846" />
+  </Comment>
+  <Comment CommentText="Block - &#xD;&#xA;&#xD;&#xA;Blocks are &quot;type&quot; that can essentially link together within a BlockChain to create a conveyer function within the program.">
+    <Position X="14.024" Y="5.323" Height="1.394" Width="1.69" />
+  </Comment>
+  <Comment CommentText="BrushColourConveter - &#xD;&#xA;&#xD;&#xA;A public boolean to determine whether or not the background should be Green or Red.&#xD;&#xA;Works by returning the colour Green if the bool is True and Red if it is False.&#xD;&#xA;&#xD;&#xA;Used to control the background colour of the form to indicate signing function">
+    <Position X="8.385" Y="1.802" Height="1.74" Width="3.373" />
+  </Comment>
+  <Comment CommentText="HashGenerator - &#xD;&#xA;&#xD;&#xA;The HashGen function allows the program to use an algorithm to generate a hash from speciifc values.">
+    <Position X="16.515" Y="0.827" Height="1.142" Width="2.545" />
+  </Comment>
+  <Class Name="BlockChainDataTemplates.Block" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAAAgAgKAQEAAAAEAAgAAAABAAACAQEAAiCgA=</HashCode>
+      <FileName>Block.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BlockChainDataTemplates.BlockChain">
+    <Position X="0.5" Y="2.5" Width="4.5" />
+    <AssociationLine Name="Blocks" Type="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.875" Y="3.988" />
+        <Point X="3.875" Y="4.171" />
+        <Point X="3.875" Y="4.171" />
+        <Point X="3.875" Y="4.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIEAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Block.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Blocks" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BlockChainDataTemplates.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQBA=</HashCode>
+      <FileName>\\klstu1\1516\HS\405173\My Documents\#Unit 14 &amp; 15 - Object Oriented + Event Driven Programming\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TheBlockList" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BlockChainDataTemplates.BrushColourConverter" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.5" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>\\klstu1\1516\HS\405173\My Documents\#Unit 14 &amp; 15 - Object Oriented + Event Driven Programming\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;">
+    <Position X="0.5" Y="4.75" Width="6.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BlockChainDataTemplates.HashGenerator">
+    <Position X="13.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAAEAA=</HashCode>
+      <FileName>Hashy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
